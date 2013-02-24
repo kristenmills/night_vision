@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = NightVision::VERSION
   spec.authors       = ["kristenmills"]
   spec.email         = ["kristen@kristen-mills.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Peer through the darkness of running code.}
+  spec.summary       = %q{Peer through the darkness of running code.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
