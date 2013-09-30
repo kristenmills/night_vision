@@ -1,6 +1,6 @@
 # NightVision
 
-TODO: Write a gem description
+Peer through the darkness of running code.
 
 ## Installation
 
