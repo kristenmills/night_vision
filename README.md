@@ -18,7 +18,59 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+	class OddEven
+		def odd? n
+			n.odd?
+		end
+
+		def even? n
+			not odd? n
+		end
+	end
+
+	> o = OddEven.new
+	> o.odd? 1
+	 => false
+	> o.odd? 2
+	 => true
+	> NightVision.goggles(OddEven)
+	> o.odd? 1
+	------------------------------------------------
+	Invoking OddEven#odd?
+	Actual arguments are: [1]
+	------------------------------------------------
+	------------------------------------------------
+	Returning from OddEven#odd?
+	Return value is: true
+	------------------------------------------------
+	 => true
+	> o.odd? 2
+	------------------------------------------------
+	Invoking OddEven#odd?
+	Actual arguments are: [2]
+	------------------------------------------------
+	------------------------------------------------
+	Returning from OddEven#odd?
+	Return value is: false
+	------------------------------------------------
+	 => false
+	> o.even? 2
+	------------------------------------------------
+	Invoking Cheese#even2?
+	Actual arguments are: [6]
+	------------------------------------------------
+	------------------------------------------------
+	Invoking Cheese#odd2?
+	Actual arguments are: [6]
+	------------------------------------------------
+	------------------------------------------------
+	Returning from Cheese#odd2?
+	Return value is: false
+	------------------------------------------------
+	Returning from Cheese#even2?
+	Return value is: true
+	------------------------------------------------
+	 => true
 
 ## Contributing
 
