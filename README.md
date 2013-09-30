@@ -17,7 +17,7 @@ Or install it yourself as:
     $ gem install night_vision
 
 ## Usage
-
+```ruby
 	class OddEven
 		def odd? n
 			n.odd?
@@ -27,7 +27,8 @@ Or install it yourself as:
 			not odd? n
 		end
 	end
-
+```
+``` ruby
 	> o = OddEven.new
 	> o.odd? 1
 	 => false
@@ -35,43 +36,43 @@ Or install it yourself as:
 	 => true
 	> NightVision.goggles(OddEven)
 	> o.odd? 1
-	------------------------------------------------
-	Invoking OddEven#odd?
-	Actual arguments are: [1]
-	------------------------------------------------
-	------------------------------------------------
-	Returning from OddEven#odd?
-	Return value is: true
-	------------------------------------------------
+	"------------------------------------------------"
+	"Invoking OddEven#odd?"
+	"Actual arguments are: [1]"
+	"------------------------------------------------"
+	"------------------------------------------------"
+	"Returning from OddEven#odd?"
+	"Return value is: true"
+	"------------------------------------------------"
 	 => true
 	> o.odd? 2
-	------------------------------------------------
-	Invoking OddEven#odd?
-	Actual arguments are: [2]
-	------------------------------------------------
-	------------------------------------------------
-	Returning from OddEven#odd?
-	Return value is: false
-	------------------------------------------------
+	"------------------------------------------------"
+	"Invoking OddEven#odd?"
+	"Actual arguments are: [2]"
+	"------------------------------------------------"
+	"------------------------------------------------"
+	"Returning from OddEven#odd?"
+	"Return value is: false"
+	"------------------------------------------------"
 	 => false
 	> o.even? 2
-	------------------------------------------------
-	Invoking Cheese#even2?
-	Actual arguments are: [6]
-	------------------------------------------------
-	------------------------------------------------
-	Invoking Cheese#odd2?
-	Actual arguments are: [6]
-	------------------------------------------------
-	------------------------------------------------
-	Returning from Cheese#odd2?
-	Return value is: false
-	------------------------------------------------
-	Returning from Cheese#even2?
-	Return value is: true
-	------------------------------------------------
+	"------------------------------------------------"
+	"Invoking Cheese#even2?"
+	"Actual arguments are: [6]"
+	"------------------------------------------------"
+	"------------------------------------------------"
+	"Invoking Cheese#odd2?"
+	"Actual arguments are: [6]"
+	"------------------------------------------------"
+	"------------------------------------------------"
+	"Returning from Cheese#odd2?"
+	"Return value is: false"
+	"------------------------------------------------"
+	"Returning from Cheese#even2?"
+	"Return value is: true"
+	"------------------------------------------------"
 	 => true
-
+```
 ## Contributing
 
 1. Fork it
