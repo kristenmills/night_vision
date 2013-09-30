@@ -6,11 +6,11 @@ require 'night_vision/version'
 Gem::Specification.new do |spec|
   spec.name          = "night_vision"
   spec.version       = NightVision::VERSION
-  spec.authors       = ["kristenmills"]
+  spec.authors       = ["Kristen Mills"]
   spec.email         = ["kristen@kristen-mills.com"]
   spec.description   = %q{Peer through the darkness of running code.}
   spec.summary       = %q{Peer through the darkness of running code.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/kristenmills/night_vision"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
