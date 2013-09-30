@@ -2,7 +2,7 @@ require "night_vision/version"
 
 module NightVision
   DIVIDER = "------------------------------------------------"
-  def self.before(*classes)
+  def self.goggles(*classes)
     classes.each do |klass|
       klass.instance_methods.each do |method|
         m = klass.instance_method(method)
@@ -11,7 +11,12 @@ module NightVision
           puts "Invoking #{method}"
           puts "Actual arguments are: #{args}"
           puts DIVIDER
-          m.bind(self).(*args, &block)
+          val = m.bind(self).(*args, &block)
+          puts DIVIDER
+          puts "Returning from #{method}"
+          puts "Return value is: #{val}"
+          puts DIVIDER
+          val
         end
       end
     end
