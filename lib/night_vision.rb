@@ -8,12 +8,12 @@ module NightVision
         m = klass.instance_method(method)
         klass.send(:define_method, method) do |*args, &block|
           puts DIVIDER
-          puts "Invoking #{method}"
+          puts "Invoking #{m.owner}##{method}"
           puts "Actual arguments are: #{args}"
           puts DIVIDER
           val = m.bind(self).(*args, &block)
           puts DIVIDER
-          puts "Returning from #{method}"
+          puts "Returning from #{m.owner}##{method}"
           puts "Return value is: #{val}"
           puts DIVIDER
           val
