@@ -57,18 +57,18 @@ Or install it yourself as:
 	 => false
 	> o.even? 2
 	"------------------------------------------------"
-	"Invoking Cheese#even2?"
+	"Invoking OddEven#even?"
 	"Actual arguments are: [6]"
 	"------------------------------------------------"
 	"------------------------------------------------"
-	"Invoking Cheese#odd2?"
+	"Invoking OddEven#odd?"
 	"Actual arguments are: [6]"
 	"------------------------------------------------"
 	"------------------------------------------------"
-	"Returning from Cheese#odd2?"
+	"Returning from OddEven#odd?"
 	"Return value is: false"
 	"------------------------------------------------"
-	"Returning from Cheese#even2?"
+	"Returning from OddEven#even?"
 	"Return value is: true"
 	"------------------------------------------------"
 	 => true
